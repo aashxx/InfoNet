@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Loader Component */
+.loader {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.loader img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* News Component */
+.news-card {
+    margin: 0 100px 100px 100px;
+    max-width: 1115px;
+}
+
+/* Home page Component */
+.intro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 110px auto;
+}
+
+.header {
+    width: 500px;
+    margin: auto 0;
+}
+
+.img-bg {
+    height: 300px;
+    width: 500px;
+}
+
+.img-bg img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/* News Item Component */
+.newsItem {
+    height: 450px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all 0.25s ease-out;
+}
+
+.newsItem:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.img-card {
+    height: 192.94px;
+    width: 100%;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.read-more a {
+    margin: 0 25px 0 0;
+}
+
+/* Footer Component */
+footer {
+    width: 100%;
+}
+
+footer .footer-items {
+    color: whitesmoke;
+    font-family: "Josefin", sans-serif;
+    font-size: 1.1rem;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .f-items {
+    width: 250px;
+    margin: 10px 0;
+}
+
+footer .f-items ul li {
+    font-size: .8rem;
+    margin: 2px;
+    list-style: none;
+}
+
+footer .follow {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+footer .follow i {
+    color: whitesmoke;
+    margin: 0 6px 10px 6px;
+    opacity: .5;
+}
+
+footer .f-items a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Responsive Design for tablet screens */
+@media screen and (max-width: 1200px) {
+    .news-card {
+        margin: auto;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    .newsItem {
+        height: 400px;
+    }
+
+    .img-card {
+        height: 165.94px;
+    }
+
+    .para {
+        font-size: 0.8rem;
+    }
+
+    .img-bg {
+        margin-top: 20px;
+        height: 300px;
+        width: 500px;
+    }
+}
+
+/* Responsive design for mobile screens */
+@media screen and (max-width: 400px){
+    .news-card {
+        margin: auto;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    .img-bg {
+        margin-top: 20px;
+    }
+
+    .header h1 {
+        font-size: 4.5rem;
+    }
+
+    .header h2 {
+        font-size: 2.5rem;
+    }
+
+    .header p {
+        margin-top: 25px;
+    }
+}
